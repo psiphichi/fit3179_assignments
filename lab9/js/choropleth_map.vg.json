@@ -24,7 +24,7 @@
         "url": "js/oceans.topojson",
         "format": {"type": "topojson", "feature": "oceans"}
       },
-      "mark": {"type": "geoshape", "fill": "skyblue"}
+      "mark": {"type": "geoshape", "fill": "skyblue", "opacity":0.6}
     },
     
     {
@@ -54,7 +54,7 @@
           "scale": {
             "type": "threshold",
             "domain": [1, 10, 20],
-            "range": ["#86D700", "#E1DD00", "#F5A500", "#AF550A"] 
+            "range": ["#f2ccff", "#df80ff", "#cc33ff", "#ac00e6"] 
           }
         },
         "tooltip": [
