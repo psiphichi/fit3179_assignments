@@ -45,7 +45,7 @@
               "url": "data/country_profile_variables.csv"
             },
             "key": "country",
-            "fields": ["GDP: Gross domestic product (million current US$)"]
+            "fields": ["GDP per capita (current US$)"]
           } 
         }
       ],
@@ -53,14 +53,13 @@
       "mark": {"type": "geoshape", "stroke":"white"},
       "encoding": {
         "color": {
-          "field": "Unemployment (% of labour force)",
+          "field": "GDP per capita (current US$)",
           "title": "Unemployment Rate (%)",
           "type": "quantitative",
           "scale": {
             "type": "threshold",
             "domain": [1, 10, 20],
             "range": ["#f2ccff", "#df80ff", "#cc33ff", "#8600b3"]
-
           }
         },
         "tooltip": [
