@@ -77,7 +77,7 @@
         "color": {"value": "red"},
         "opacity": {
           "condition": {
-            "test": "datum['country'] == 'Australia' ||  datum['country'] == 'Norway' ||  datum['country'] == 'Rwanda' ||  datum['country'] == 'Iceland' ||  datum['country'] == 'Japan' ||  datum['country'] == 'Central African Republic' ||  datum['country'] == 'Somalia'",
+            "test": "datum['country'] == 'Norway' ||  datum['country'] == 'Rwanda' ||  datum['country'] == 'Iceland' ||  datum['country'] == 'Japan' ||  datum['country'] == 'Central African Republic' ||  datum['country'] == 'Somalia'",
             "value": 1 },
           "value": 0 },
           "tooltip": [
