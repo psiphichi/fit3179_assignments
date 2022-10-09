@@ -54,7 +54,7 @@
       "encoding": {
         "color": {
           "field": "GDP growth rate in 2005 prices",
-          "title": "Surface area (km2)",
+          "title": "GDP Growth Rate (%)",
           "type": "quantitative",
           "scale": {
             "type": "threshold",

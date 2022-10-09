@@ -49,8 +49,12 @@
 
     <div class="page-content"><!-- Your content goes here -->
 
-      <div class="mdl-grid" style="width: auto;">
-        <div id="choropleth_map"></div>
+      <div class="mdl-grid">
+        <div id="gdp_growth_choropleth_map"></div>
+      </div>
+
+      <div class="mdl-grid">
+        <div id="population_density_choropleth_map"></div>
       </div>
 
       <div class="mdl-grid" style="padding-top: 30px">
@@ -62,8 +66,12 @@
 </div>
 
 <script type="text/javascript">
-    var spec2 = "js/choropleth_map.vg.json";
-  vegaEmbed('#choropleth_map', spec2).then(function(result) {
+    var spec2 = "js/gdp_growth_choropleth_map.vg.json";
+  vegaEmbed('#gdp_growth_choropleth_map', spec2).then(function(result) {
+  }).catch(console.error);
+
+  var spec2 = "js/choropleth_map.vg.json";
+  vegaEmbed('#population_density_choropleth_map', spec2).then(function(result) {
   }).catch(console.error);
 
   var spec2 = "js/bubble_chart.vg.json";
