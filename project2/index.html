@@ -58,6 +58,10 @@
       </div>
 
       <div class="mdl-grid">
+        <div id="corr_matrix"></div>
+      </div>
+
+      <div class="mdl-grid">
         <div id="scatter_plot"></div>
       </div>
 
@@ -76,6 +80,14 @@
 
   var spec2 = "js/population_density_choropleth_map.vg.json";
   vegaEmbed('#population_density_choropleth_map', spec2).then(function(result) {
+  }).catch(console.error);
+
+  var spec2 = "js/corr_matrix.vg.json";
+  vegaEmbed('#corr_matrix', spec2).then(function(result) {
+  }).catch(console.error);
+
+  var spec2 = "js/scatter_plot.vg.json";
+  vegaEmbed('#scatter_plot', spec2).then(function(result) {
   }).catch(console.error);
 
   var spec2 = "js/bubble_chart.vg.json";
