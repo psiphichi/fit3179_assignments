@@ -42,7 +42,7 @@
       "color": {
         "condition": {
           "param": "brush",
-          "field": "Origin",
+          "field": "Region",
           "type": "nominal"
         },
         "value": "grey"
