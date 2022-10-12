@@ -47,10 +47,14 @@
         "value": "grey"
       },
       "tooltip": [
-        {"field": "country", "type": "nominal", "title": "Country"},
-        {"field": "Population in thousands (2017)", "type": "quantitative", "title": "Population in thousands", "format": ","},
-        {"field": "GDP per capita (current US$)", "type": "quantitative", "title": "GDP per capita", "format": ","},
-        {"field": "Seats held by women in national parliaments %", "type": "quantitative", "title": "Seats held by women (%)", "format": ","}
+        {"title": "Country", "field": "country", "type": "nominal"},
+        {"title": "Region", "field": "Region", "type": "nominal"},
+        {"title": "Population in thousands", "field": "Population in thousands (2017)", "type": "quantitative", "format": ","},
+        {"title": "GDP per capita", "field": "GDP per capita (current US$)", "type": "quantitative", "format": ","},
+        {"title": "Seats held by women (%)", "field": "Seats held by women in national parliaments %", "type": "quantitative", "format": ","},
+        {"title": "Services et al (% of GVA)", "field": "Economy: Services and other activity (% of GVA)", "type": "quantitative", "format": ","},
+        {"title": "Seats held by women (%)", "field": "Seats held by women in national parliaments %", "type": "quantitative", "format": ","},
+        {"title": "Health expenditure (% of GDP)", "field": "Health: Total expenditure (% of GDP)", "type": "quantitative", "format": ","}
       ]
     }
   }
