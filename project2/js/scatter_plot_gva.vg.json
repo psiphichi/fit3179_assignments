@@ -2,9 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Scatterplot matrix",
   "repeat": {
-    "column": [ "Population in thousands (2017)", "GDP: Gross domestic product (million current US$)", "CO2 emission estimates (million tons/tons per capita)" ],
-    "row": [ "CO2 emission estimates (million tons/tons per capita)", "GDP: Gross domestic product (million current US$)", "Population in thousands (2017)" ]
-  },
+    "column": [ "Health: Total expenditure (% of GDP)", "Seats held by women in national parliaments %", "Economy: Industry (% of GVA)" ],
+    "row": [ "Economy: Industry (% of GVA)", "Seats held by women in national parliaments %", "Health: Total expenditure (% of GDP)" ]  },
   "spec": {
     "data": {
       "url": "data/scatterplot.csv"
