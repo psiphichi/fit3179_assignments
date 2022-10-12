@@ -62,7 +62,7 @@
       </div>
 
       <div class="mdl-grid">
-        <div id="scatter_plot"></div>
+        <div id="scatter_plot_gdp"></div>
       </div>
 
       <div class="mdl-grid">
@@ -90,8 +90,8 @@
   vegaEmbed('#corr_matrix', spec2).then(function(result) {
   }).catch(console.error);
 
-  var spec2 = "js/scatter_plot.vg.json";
-  vegaEmbed('#scatter_plot', spec2).then(function(result) {
+  var spec2 = "js/scatter_plot_gdp.vg.json";
+  vegaEmbed('#scatter_plot_gdp', spec2).then(function(result) {
   }).catch(console.error);
 
   var spec2 = "js/scatter_plot_gva.vg.json";

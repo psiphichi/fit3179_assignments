@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Scatterplot matrix",
   "repeat": {
-    "column": [ "Health: Total expenditure (% of GDP)", "Seats held by women in national parliaments %", "Economy: Industry (% of GVA)" ],
-    "row": [ "Economy: Industry (% of GVA)", "Seats held by women in national parliaments %", "Health: Total expenditure (% of GDP)" ]  },
+    "column": [ "Health: Total expenditure (% of GDP)", "Seats held by women in national parliaments %", "Economy: Services and other activity (% of GVA)" ],
+    "row": [ "Economy: Services and other activity (% of GVA)", "Seats held by women in national parliaments %", "Health: Total expenditure (% of GDP)" ]  },
   "spec": {
     "data": {
       "url": "data/scatterplot.csv"
@@ -45,7 +45,13 @@
           "type": "nominal"
         },
         "value": "grey"
-      }
+      },
+      "tooltip": [
+        {"field": "country", "type": "nominal", "title": "Country"},
+        {"field": "Population in thousands (2017)", "type": "quantitative", "title": "Population in thousands", "format": ","},
+        {"field": "GDP per capita (current US$)", "type": "quantitative", "title": "GDP per capita", "format": ","},
+        {"field": "Seats held by women in national parliaments %", "type": "quantitative", "title": "Seats held by women (%)", "format": ","}
+      ]
     }
   }
 }
