@@ -1,0 +1,26 @@
+
+  {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A bar chart that sorts the y-values by the x-values.",
+    "data": {"url": "data/country_profile_variables.csv"},
+    "transform": [{"filter": "datum['Population in thousands (2017)'] > 100000"}],
+    "height": 500,
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "country",
+        "type": "nominal",
+        "sort": "-x"
+      },
+      "x": {
+        "field": "Population in thousands (2017)",
+        "type": "quantitative",
+        "title": "population"
+      }
+      ,"color": {
+        "field": "Region",
+        "type": "nominal"
+      }
+    }
+  }
+  

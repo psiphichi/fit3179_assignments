@@ -66,6 +66,10 @@
       </div>
 
       <div class="mdl-grid">
+        <div id="population_chart"></div>
+      </div>
+
+      <div class="mdl-grid">
         <div id="scatter_plot_gva"></div>
       </div>
 
@@ -92,6 +96,10 @@
 
   var spec2 = "js/scatter_plot_gdp.vg.json";
   vegaEmbed('#scatter_plot_gdp', spec2).then(function(result) {
+  }).catch(console.error);
+
+  var spec2 = "js/population_chart.vg.json";
+  vegaEmbed('#population_chart', spec2).then(function(result) {
   }).catch(console.error);
 
   var spec2 = "js/scatter_plot_gva.vg.json";

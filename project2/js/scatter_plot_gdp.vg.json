@@ -7,7 +7,7 @@
   },
   "spec": {
     "data": {
-      "url": "data/scatterplot.csv"
+      "url": "data/country_profile_variables.csv"
     },
     "mark": "point",
     "params": [
