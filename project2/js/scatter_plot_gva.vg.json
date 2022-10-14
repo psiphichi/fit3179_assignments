@@ -56,7 +56,8 @@
         {"title": "Health expenditure (% of GDP)", "field": "Health: Total expenditure (% of GDP)", "type": "quantitative", "format": ","}
       ]
     }
-  }
+  },
+  "config": {"background": "#FFF5E1"}
 }
 
 

@@ -55,7 +55,8 @@
         {"title": "Seats held by women (%)", "field": "Seats held by women in national parliaments %", "type": "quantitative", "format": ","}
       ]
     }
-  }
+  },
+  "config": {"background": "#FFF5E1"}
 }
 
 
