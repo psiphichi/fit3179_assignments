@@ -5,3 +5,11 @@ body {
 header {
     background: #000 !important;
 }
+
+.page {
+	width: 1100px;
+	background-color: white;
+	margin: auto;
+	padding: 20px;
+	padding-top: 35px;
+  }

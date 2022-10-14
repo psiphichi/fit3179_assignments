@@ -10,6 +10,7 @@
       "url": "data/country_profile_variables.csv"
     },
     "mark": "point",
+    "width": 200,
     "params": [
       { 
         "name": "brush",

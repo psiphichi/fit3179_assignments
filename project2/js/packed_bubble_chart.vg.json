@@ -22,35 +22,20 @@
       {
         "name": "table",
         "values": [
-          {"category": "A", "amount": 0.28},
-          {"category": "B", "amount": 0.55},
-          {"category": "C", "amount": 0.43},
-          {"category": "D", "amount": 0.91},
-          {"category": "E", "amount": 0.81},
-          {"category": "F", "amount": 0.53},
-          {"category": "G", "amount": 0.19},
-          {"category": "H", "amount": 0.87},
-          {"category": "I", "amount": 0.28},
-          {"category": "J", "amount": 0.55},
-          {"category": "K", "amount": 0.43},
-          {"category": "L", "amount": 0.91},
-          {"category": "M", "amount": 0.81},
-          {"category": "N", "amount": 0.53},
-          {"category": "O", "amount": 0.19},
-          {"category": "P", "amount": 0.87}
+            {"url": "data/country_profile_variables.csv"}
         ]
       }
     ],
     "scales": [
       {
         "name": "size",
-        "domain": {"data": "table", "field": "amount"},
+        "domain": {"data": "table", "field": "GDP: Gross domestic product (million current US$)"},
         "range": [100, 3000]
       },
       {
         "name": "color",
         "type": "ordinal",
-        "domain": {"data": "table", "field": "category"},
+        "domain": {"data": "table", "field": "country"},
         "range": "ramp"
       }
     ],
@@ -61,12 +46,12 @@
         "from": {"data": "table"},
         "encode": {
           "enter": {
-            "fill": {"scale": "color", "field": "category"},
+            "fill": {"scale": "color", "field": "country"},
             "xfocus": {"signal": "cx"},
             "yfocus": {"signal": "cy"}
           },
           "update": {
-            "size": {"signal": "pow(2 * datum.amount, 2)", "scale": "size"},
+            "size": {"signal": "pow(2 * datum['GDP: Gross domestic product (million current US$)'], 2)", "scale": "size"},
             "stroke": {"value": "white"},
             "strokeWidth": {"value": 1},
             "tooltip": {"signal": "datum"}
@@ -100,7 +85,7 @@
             "fontSize": {"value": 15},
             "fontWeight": {"value": "bold"},
             "fill": {"value": "white"},
-            "text": {"field": "datum.category"}
+            "text": {"field": "datum.country"}
           },
           "update": {"x": {"field": "x"}, "y": {"field": "y"}}
         }
