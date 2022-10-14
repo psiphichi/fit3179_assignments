@@ -1,21 +1,34 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "CO2 Emission Estimates by Country (million tons/tons per capita)",
     "description": "A simple radial chart with embedded data.",
-    "data": {
-      "values": [12, 23, 47, 6, 52, 19]
-    },
+    "data": {"url": "data/country_profile_variables.csv"},
+    "transform": [{"filter": "datum['CO2 emission estimates (million tons/tons per capita)'] > 20000"}],
+    "width": 600,
+    "height": 500,
     "layer": [{
       "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}
     },{
       "mark": {"type": "text", "radiusOffset": 10},
       "encoding": {
-        "text": {"field": "data", "type": "quantitative"}
+        "text": {"field": "CO2 emission estimates (million tons/tons per capita)", "type": "quantitative"}
       }
     }],
     "encoding": {
-      "theta": {"field": "data", "type": "quantitative", "stack": true},
-      "radius": {"field": "data", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
-      "color": {"field": "data", "type": "nominal", "legend": null}
+      "theta": {"field": "CO2 emission estimates (million tons/tons per capita)", "type": "quantitative", "stack": true},
+      "radius": {"field": "CO2 emission estimates (million tons/tons per capita)", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
+      "color": {
+        "field": "Region", 
+        "type": "nominal", 
+        "legend": null,
+        "scale": {"domain": ["Africa", "Asia", "Europe", "North America", "South America"]}
+    },
+      "tooltip": [
+        {"title": "Country", "field": "country", "type": "nominal"},
+        {"title": "Region", "field": "Region", "type": "nominal"},
+        {"title": "Population in thousands", "field": "Population in thousands (2017)", "type": "quantitative", "format": ","},
+        {"title": "GDP per capita", "field": "GDP per capita (current US$)", "type": "quantitative", "format": ","}
+      ]
     }
   }
   

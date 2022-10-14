@@ -67,16 +67,12 @@
 
       <div class="mdl-grid">
         <div id="population_chart"></div>
+        <div id="radial_plot"></div>
       </div>
 
       <div class="mdl-grid">
         <div id="scatter_plot_gva"></div>
       </div>
-
-      <div class="mdl-grid" style="padding-top: 30px">
-        <div id="bubble_chart"></div>
-      </div>
-    
     </div>
   </main>
 </div>
@@ -102,12 +98,12 @@
   vegaEmbed('#population_chart', spec2).then(function(result) {
   }).catch(console.error);
 
-  var spec2 = "js/scatter_plot_gva.vg.json";
-  vegaEmbed('#scatter_plot_gva', spec2).then(function(result) {
+  var spec2 = "js/radial_plot.vg.json";
+  vegaEmbed('#radial_plot', spec2).then(function(result) {
   }).catch(console.error);
 
-  var spec2 = "js/bubble_chart.vg.json";
-  vegaEmbed('#bubble_chart', spec2).then(function(result) {
+  var spec2 = "js/scatter_plot_gva.vg.json";
+  vegaEmbed('#scatter_plot_gva', spec2).then(function(result) {
   }).catch(console.error);
 </script>
 

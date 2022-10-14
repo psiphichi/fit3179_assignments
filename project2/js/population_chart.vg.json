@@ -20,7 +20,13 @@
       ,"color": {
         "field": "Region",
         "type": "nominal"
-      }
+      },
+      "tooltip": [
+        {"title": "Country", "field": "country", "type": "nominal"},
+        {"title": "Region", "field": "Region", "type": "nominal"},
+        {"title": "Population in thousands", "field": "Population in thousands (2017)", "type": "quantitative", "format": ","},
+        {"title": "GDP per capita", "field": "GDP per capita (current US$)", "type": "quantitative", "format": ","}
+      ]
     }
   }
   
