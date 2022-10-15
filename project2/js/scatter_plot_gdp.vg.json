@@ -4,6 +4,36 @@
     "column": [ "Population in thousands (2017)", "GDP: Gross domestic product (million current US$)", "CO2 emission estimates (million tons/tons per capita)" ],
     "row": [ "CO2 emission estimates (million tons/tons per capita)", "GDP: Gross domestic product (million current US$)", "Population in thousands (2017)" ]
   },
+  "params": [
+    {
+      "name": "Continent_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "labels":[
+          "Show All",
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "name": "Continent Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "Continent_selection == null || datum.Region == Continent_selection"}
+  ],
   "spec": {
     "data": {
       "url": "data/country_profile_variables.csv"
@@ -30,32 +60,8 @@
           "zoom": "wheel![!event.shiftKey]"
         },
         "bind": "scales"
-      },
-      {
-        "name": "Continent_selection",
-        "bind": {
-          "input": "select",
-          "options": [
-            null,
-            "North America",
-            "South America",
-            "Europe",
-            "Africa",
-            "Asia",
-            "Oceania"
-          ],
-          "labels":[
-            "Show All",
-            "North America",
-            "South America",
-            "Europe",
-            "Africa",
-            "Asia",
-            "Oceania"
-          ],
-          "name": "Continent Selection: "
-        }
       }
+
     ],  
     "encoding": {
       "x": {"field": {"repeat": "column"}, "type": "quantitative"},
