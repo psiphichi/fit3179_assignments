@@ -2,7 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 800,
   "height": 600,
-  "title": "Relation of GDP per capita and ",
   "data": {
     "url": "data/country_profile_variables.csv"
   },
