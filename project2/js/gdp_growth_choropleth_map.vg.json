@@ -3,7 +3,39 @@
   "title": "GDP growth rate (annual %, const. 2005 prices)",
   "width": 930,
   "height": 500,
-  "projection": {"type": "equalEarth"},
+  "params": [
+    {
+      "name": "zoom_level",
+      "value": 170,
+      "bind": {
+        "input": "range",
+        "min": 170,
+        "max": 600,
+        "step": 10,
+        "name": "Zoom: "
+      }
+    },
+    {
+      "name": "center_to",
+      "value": [0, 180],
+      "bind": {
+        "input": "select",
+        "options": [
+          [0, 180],
+          [7, 43],
+          [101, 4],
+          [-70, 10]
+        ],
+        "labels": ["Centre", "Europe", "SE Asia", "Central America"],
+        "name": "Map Centre: "
+      }
+    }
+  ],
+  "projection": {
+    "type": "equalEarth",
+    "center": {"expr": "center_to"},
+    "scale": {"expr": "zoom_level"}
+  },
   "layer": [
     {
       "data": {
