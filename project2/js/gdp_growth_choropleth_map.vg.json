@@ -103,11 +103,6 @@
     }
   ],
   "config": {
-    "style": {
-      "cell": {
-        "stroke": "transparent"
-      }
-    },
     "background": "#FFF5E1"
   }
 }
