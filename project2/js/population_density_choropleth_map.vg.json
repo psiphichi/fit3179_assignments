@@ -9,7 +9,7 @@
       "bind": {
         "input": "range",
         "min": 170,
-        "max": 600,
+        "max": 1000,
         "step": 10,
         "name": "Zoom: "
       }
@@ -44,7 +44,8 @@
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
       "encoding": {
         "tooltip": [
-          {"field": "properties.NAME", "type": "nominal", "title": "Country"}
+          {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+          {"title": "Region", "field": "Region", "type": "nominal"}
         ]
       }
     },
