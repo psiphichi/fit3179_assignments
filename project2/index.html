@@ -69,16 +69,21 @@
 
       <div class="mdl-grid">
         <div id="population_chart"></div>
+        <div id="gdp_bar_chart"></div>
+      </div>
+
+      <div class="mdl-grid">
         <div id="radial_plot"></div>
       </div>
 
       <div class="mdl-grid">
-        <div id="packed_bubble_chart"></div>
+        <div id="bubble_chart"></div>
       </div>
-
+      
       <div class="mdl-grid">
         <div id="scatter_plot_gva"></div>
       </div>
+
     </div>
 
   </div>
@@ -95,10 +100,6 @@
   vegaEmbed('#population_density_choropleth_map', spec2, { "actions": false }).then(function(result) {
   }).catch(console.error);
 
-  // var spec2 = "js/corr_matrix.vg.json";
-  // vegaEmbed('#corr_matrix', spec2).then(function(result) {
-  // }).catch(console.error);
-
   var spec2 = "js/scatter_plot_gdp.vg.json";
   vegaEmbed('#scatter_plot_gdp', spec2, { "actions": false }).then(function(result) {
   }).catch(console.error);
@@ -111,14 +112,17 @@
   vegaEmbed('#radial_plot', spec2, { "actions": false }).then(function(result) {
   }).catch(console.error);
 
-  var spec2 = "js/packed_bubble_chart.vg.json";
-  vegaEmbed('#packed_bubble_chart', spec2, { "actions": false }).then(function(result) {
+  var spec2 = "js/gdp_bar_chart.vg.json";
+  vegaEmbed('#gdp_bar_chart', spec2, { "actions": false }).then(function(result) {
   }).catch(console.error);
 
   var spec2 = "js/scatter_plot_gva.vg.json";
   vegaEmbed('#scatter_plot_gva', spec2, { "actions": false }).then(function(result) {
   }).catch(console.error);
 
+  var spec2 = "js/bubble_chart.vg.json";
+  vegaEmbed('#bubble_chart', spec2, { "actions": false }).then(function(result) {
+  }).catch(console.error);
 
 </script>
 
