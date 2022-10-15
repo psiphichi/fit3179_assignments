@@ -19,12 +19,38 @@
         "step": 100,
         "name": "Minimum GDP per Capita: "
       } 
+    },
+    {
+      "name": "Continent_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "labels":[
+          "Show All",
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "name": "Continent Selection: "
+      }
     }
   ],
   "transform": [
     {"filter": "datum['Health: Total expenditure (% of GDP)'] > 0"}, 
     {"filter": "datum['Economy: Services and other activity (% of GVA)']> 0"},
-    {"filter": "datum['GDP per capita (current US$)'] > GDPperCapita_Above"}
+    {"filter": "datum['GDP per capita (current US$)'] > GDPperCapita_Above"},
+    {"filter": "Continent_selection == null || datum.Region == Continent_selection"}
   ],
   "mark": "circle",
   "encoding": {
