@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Scatterplot matrix",
   "repeat": {
     "column": [ "Population in thousands (2017)", "GDP: Gross domestic product (million current US$)", "CO2 emission estimates (million tons/tons per capita)" ],
     "row": [ "CO2 emission estimates (million tons/tons per capita)", "GDP: Gross domestic product (million current US$)", "Population in thousands (2017)" ]
