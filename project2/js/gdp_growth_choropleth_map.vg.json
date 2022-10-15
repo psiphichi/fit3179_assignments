@@ -101,7 +101,7 @@
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
           {"title": "Region", "field": "Region", "type": "nominal"},
-          {"field": "GDP growth rate in 2005 prices", "type": "quantitative", "format": ".2f", "title":"GDP Growth Rate"}
+          {"field": "GDP growth rate in 2005 prices", "type": "quantitative", "format": ".2f", "title":"GDP Growth Rate (%)"}
         ]
       }
     }
