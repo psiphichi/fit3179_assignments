@@ -86,6 +86,7 @@
       "tooltip": [
         {"title": "Country", "field": "country", "type": "nominal"},
         {"title": "Region", "field": "Region", "type": "nominal"},
+        {"title": "CO2 emission estimates", "field": "CO2 emission estimates (million tons/tons per capita)", "type": "quantitative", "format": ","},
         {"title": "Population in thousands", "field": "Population in thousands (2017)", "type": "quantitative", "format": ","},
         {"title": "GDP per capita", "field": "GDP per capita (current US$)", "type": "quantitative", "format": ","}
       ]
