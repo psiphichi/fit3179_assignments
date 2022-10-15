@@ -3,8 +3,8 @@
     "description": "A simple radial chart with embedded data.",
     "data": {"url": "data/country_profile_variables.csv"},
     "transform": [{"filter": "datum['CO2 emission estimates (million tons/tons per capita)'] > 20000"}],
-    "width": 500,
-    "height": 500,
+    "width": 410,
+    "height": 400,
     "layer": [
       {
         "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}
