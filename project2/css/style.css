@@ -31,6 +31,10 @@ header div span{
 	margin-top: 25px;
 }
 
+.margin_top_0 {
+	margin-top: 0px;
+}
+
 .center {
 text-align: center;
 }

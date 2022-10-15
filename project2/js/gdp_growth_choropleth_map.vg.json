@@ -92,7 +92,11 @@
             "domain": [0, 3, 6, 9],
             "range": ["#CEFAD0", "#99FF99", "#00CC00", "#009900", "#006600"]
           },
-          "legend": {"title": ["GDP Growth Rate", "(Annual % in 2005 Price)"]}
+          "legend": {
+            "title": ["GDP Growth Rate", "(Annual %", "in 2005 Price)"],
+            "titleFont": "Verdana",
+            "titleFontSize": 13
+          }
         },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},

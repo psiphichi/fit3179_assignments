@@ -93,7 +93,11 @@
             "domain": [10, 50, 100, 1000],
             "range": ["#f5d7d7", "#d99a9a", "#c75656", "#C70039", "#581845"]
           },
-          "legend": {"title": ["Population Density", "(per km2, 2017)"]}
+          "legend": {
+            "title": ["Population Density", "(per km2, 2017)"],
+            "titleFont": "Verdana",
+            "titleFontSize": 13
+          }
         },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
