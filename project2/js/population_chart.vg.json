@@ -16,10 +16,11 @@
         "field": "Population in thousands (2017)",
         "type": "quantitative",
         "title": "population"
-      }
-      ,"color": {
+      },
+      "color": {
         "field": "Region",
-        "type": "nominal"
+        "type": "nominal",
+        "scale": {"domain": ["Africa", "Asia", "Europe", "North America", "Oceania","South America"]}
       },
       "tooltip": [
         {"title": "Country", "field": "country", "type": "nominal"},

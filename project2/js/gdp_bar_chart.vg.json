@@ -3,7 +3,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A bar chart that sorts the y-values by the x-values.",
     "data": {"url": "data/country_profile_variables.csv"},
-    "transform": [{"filter": "datum['Population in thousands (2017)'] > 100000"}],
+    "transform": [{"filter": "datum['GDP: Gross domestic product (million current US$)'] > 1000000"}],
     "height": 500,
     "mark": "bar",
     "encoding": {
@@ -16,10 +16,11 @@
         "field": "GDP: Gross domestic product (million current US$)",
         "type": "quantitative",
         "title": "GDP"
-      }
-      ,"color": {
+      },
+      "color": {
         "field": "Region",
-        "type": "nominal"
+        "type": "nominal",
+        "scale": {"domain": ["Africa", "Asia", "Europe", "North America", "Oceania","South America"]}
       },
       "tooltip": [
         {"title": "Country", "field": "country", "type": "nominal"},

@@ -40,12 +40,9 @@
         "axis": {"minExtent": 30}
       },
       "color": {
-        "condition": {
-          "param": "brush",
-          "field": "Region",
-          "type": "nominal"
-        },
-        "value": "grey"
+        "field": "Region",
+        "type": "nominal",
+        "scale": {"domain": ["Africa", "Asia", "Europe", "North America", "Oceania","South America"]}
       },
       "tooltip": [
         {"title": "Country", "field": "country", "type": "nominal"},
