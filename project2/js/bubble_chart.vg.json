@@ -58,11 +58,11 @@
         "tooltip": [
           {"field": "country", "type": "nominal", "title": "Country"},
           {"field": "Population in thousands (2017)", "type": "quantitative", "title": "Population in thousands", "format": ","},
-          {"field": "Economy: Services and other activity (% of GVA)", "type": "quantitative", "title": "Economy: Services and other activity (% of GVA)", "format": ","},
+          {"field": "Economy: Services and other activity (% of GVA)", "type": "quantitative", "title": "Services et al (% of GVA)", "format": ","},
           {"field": "Health: Total expenditure (% of GDP)", "type": "quantitative", "title": "Health: Total expenditure (% of GDP)", "format": ","}
         ],
         "opacity": {
-          "value": 0.3
+          "value": 0.5
         }        
       }
     },
