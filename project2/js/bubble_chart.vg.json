@@ -41,7 +41,10 @@
     "color": {
       "field": "Region",
       "type": "nominal",
-      "scale": {"domain": ["Africa", "Asia", "Europe", "North America", "Oceania","South America"]}
+      "scale": {
+        "domain": ["Africa", "Asia", "Europe", "North America", "Oceania","South America"],
+        "range": ["rgb(76, 120, 168)", "rgb(245, 133, 24)", "rgb(255, 157, 166)", "rgb(114, 183, 178)", "rgb(84, 162, 75)", "rgb(238, 202, 59)"]
+      }
     },
     "size": {
       "field": "GDP per capita (current US$)",
