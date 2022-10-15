@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Population density (per km2, 2017)",
   "width": 930,
   "height": 500,
   "params": [
