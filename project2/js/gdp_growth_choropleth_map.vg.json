@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "GDP growth rate (annual %, const. 2005 prices)",
   "width": 930,
   "height": 500,
   "params": [
