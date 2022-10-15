@@ -23,15 +23,24 @@ header div span{
 	font-family: Garamond, serif !important;
 }
 
-.marign_top_200 {
+.margin_top_200 {
 	margin-top: 100px;
+}
+
+.margin_top_25 {
+	margin-top: 25px;
 }
 
 .center {
 text-align: center;
 }
 
+
 .full_line_comment {
+}
+
+.comment {
+	font-family: Verdana, sans-serif;	
 	font-size: 20px;
 	line-height: 1.3;
 }
