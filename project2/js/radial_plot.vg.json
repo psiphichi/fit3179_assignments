@@ -31,6 +31,11 @@
         "scale": {
           "domain": ["Asia", "Europe", "North America"],
           "range": ["rgb(245, 133, 24)", "rgb(255, 157, 166)", "rgb(114, 183, 178)", "rgb(84, 162, 75)", "rgb(238, 202, 59)"]
+        },
+        "legend": {
+          "titleFont": "Verdana",
+          "titleFontSize": 13,
+          "labelFont": "Verdana"
         }
       },
       "tooltip": [

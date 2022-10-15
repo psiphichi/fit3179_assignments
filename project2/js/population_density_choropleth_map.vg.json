@@ -96,7 +96,8 @@
           "legend": {
             "title": ["Population Density", "(per km2, 2017)"],
             "titleFont": "Verdana",
-            "titleFontSize": 13
+            "titleFontSize": 13,
+            "labelFont": "Verdana"
           }
         },
         "tooltip": [

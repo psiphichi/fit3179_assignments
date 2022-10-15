@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "data/country_profile_variables.csv"},
-  "width": 800,
-  "height": 600,
+  "width": 850,
+  "height": 500,
   "params": [
     {
     "name": "grid",
@@ -70,6 +70,11 @@
       "scale": {
         "domain": ["Africa", "Asia", "Europe", "North America", "Oceania","South America"],
         "range": ["rgb(76, 120, 168)", "rgb(245, 133, 24)", "rgb(255, 157, 166)", "rgb(114, 183, 178)", "rgb(84, 162, 75)", "rgb(238, 202, 59)"]
+      },
+      "legend": {
+        "titleFont": "Verdana",
+        "titleFontSize": 13,
+        "labelFont": "Verdana"
       }
     },
     "size": {
@@ -79,6 +84,12 @@
         "type": "threshold",
         "domain": [500, 1000, 5000, 10000, 50000],
         "range": [10, 50, 150, 200, 300, 600]
+      },
+      "legend": {
+        "title": ["GDP per capita", "(current US$)"],
+        "titleFont": "Verdana",
+        "titleFontSize": 13,
+        "labelFont": "Verdana"
       }
     },
     "tooltip": [

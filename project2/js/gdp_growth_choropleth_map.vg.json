@@ -95,7 +95,8 @@
           "legend": {
             "title": ["GDP Growth Rate", "(Annual %", "in 2005 Price)"],
             "titleFont": "Verdana",
-            "titleFontSize": 13
+            "titleFontSize": 13,
+            "labelFont": "Verdana"
           }
         },
         "tooltip": [
