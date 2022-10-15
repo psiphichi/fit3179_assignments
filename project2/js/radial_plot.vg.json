@@ -5,14 +5,23 @@
     "transform": [{"filter": "datum['CO2 emission estimates (million tons/tons per capita)'] > 20000"}],
     "width": 500,
     "height": 500,
-    "layer": [{
-      "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}
-    },{
-      "mark": {"type": "text", "radiusOffset": 10},
-      "encoding": {
-        "text": {"field": "CO2 emission estimates (million tons/tons per capita)", "type": "quantitative"}
+    "layer": [
+      {
+        "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}
+      },
+      {
+        "mark": {"type": "text", "size": 20, "radiusOffset": 40},
+        "encoding": {
+          "text": {"field": "CO2 emission estimates (million tons/tons per capita)", "type": "quantitative"}
+        }
+      },
+      {
+        "mark": {"type": "text", "fill": "#000", "size": 15, "radiusOffset": -30},
+        "encoding": {
+          "text": {"field": "country", "type": "nominal"}
+        }
       }
-    }],
+    ],
     "encoding": {
       "theta": {"field": "CO2 emission estimates (million tons/tons per capita)", "type": "quantitative", "stack": true},
       "radius": {"field": "CO2 emission estimates (million tons/tons per capita)", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
