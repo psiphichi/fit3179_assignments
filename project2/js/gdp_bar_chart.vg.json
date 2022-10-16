@@ -10,12 +10,23 @@
       "y": {
         "field": "country",
         "type": "nominal",
-        "sort": "-x"
+        "sort": "-x",
+        "axis": {
+          "title": "",
+          "labelFont": "Verdana",
+          "labelFontSize": 11
+        }
       },
       "x": {
         "field": "GDP: Gross domestic product (million current US$)",
         "type": "quantitative",
-        "title": "GDP"
+        "title": "GDP",
+        "axis": {
+          "title": "GDP",
+          "titleFontSize": 15,
+          "labelFont": "Verdana",
+          "labelFontSize": 11
+        }
       },
       "color": {
         "field": "Region",
