@@ -57,12 +57,22 @@
     "x": {
       "field": "Health: Total expenditure (% of GDP)", 
       "type": "quantitative",
-      "scale": {"domain": [0, 20]}
+      "scale": {"domain": [0, 20]},
+      "axis": {
+        "labelFont": "Verdana",
+        "title": "Health Total Expenditure",
+        "titleFontSize": 15
+      }
     },
     "y": {
       "field": "Economy: Services and other activity (% of GVA)", 
       "type": "quantitative",
-      "scale": {"domain": [0, 100]}
+      "scale": {"domain": [0, 100]},
+      "axis": {
+        "labelFont": "Verdana",
+        "title": "Service and Other Activities (% of GVA)",
+        "titleFontSize": 15
+      }
     },
     "color": {
       "field": "Region",
@@ -73,6 +83,7 @@
       },
       "legend": {
         "titleFont": "Verdana",
+        "title": "Region",
         "titleFontSize": 13,
         "labelFont": "Verdana"
       }
