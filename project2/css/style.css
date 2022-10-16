@@ -2,13 +2,18 @@ body {
     background-color: #FFF5E1;
     }
 
+	html {
+		scroll-behavior: smooth;
+	  }
+
 header {
     background: #000 !important;
 }
 
 header div span{
-	font-size: 40px !important;
+	font-size: 45px !important;
 	font-family: Garamond, serif !important;
+	font-weight: bold !important;
 }
 
 .page {
@@ -21,6 +26,7 @@ header div span{
 
 .chart_title {
 	font-family: Garamond, serif !important;
+	font-weight: bold;
 }
 
 .margin_top_200 {

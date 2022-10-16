@@ -27,19 +27,29 @@
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="https://www.kaggle.com/datasets/sudalairajkumar/undata-country-profiles?resource=download">Data Source</a>
       </nav>
     </div>
   </header>
+
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Navigation</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="#gdp_growth_choropleth_map_title">GDP Growth Rate</a>
+      <a class="mdl-navigation__link" href="#population_density_choropleth_map_title">Population Density</a>
+      <a class="mdl-navigation__link" href="#scatter_plot_gdp_title">Relations of Population, GDP, CO2 Emission</a>
+      <a class="mdl-navigation__link" href="#population_chart_title">Population by Country</a>
+      <a class="mdl-navigation__link" href="#gdp_bar_chart_title">GDP by Country</a>
+      <a class="mdl-navigation__link" href="#radial_plot_title">CO2 Emission by Country</a>
+      <a class="mdl-navigation__link" href="#bubble_chart_title">Relation of GDP per Capita, Service Industry, Health</a>
+    </nav>
+  </div>
 
   <main class="mdl-layout__content">
     <div class="page">
     <div class="page-content">
       
-      <div class="center">
+      <div class="center" id="gdp_growth_choropleth_map_title">
         <h3 class="chart_title margin_top_-10">GDP Growth Rate</h3>
       </div>
       <div class="mdl-grid">
@@ -61,7 +71,7 @@
         <div id="gdp_growth_choropleth_map" class="margin_top_25"></div>
       </div>
 
-      <div class="center">
+      <div class="center" id="population_density_choropleth_map_title">
         <h3 class="chart_title margin_top_200">Population Density</h3>
       </div>
       <div class="mdl-grid">
@@ -79,7 +89,7 @@
         <div id="population_density_choropleth_map" class="margin_top_25"></div>
       </div>
 
-      <div class="center">
+      <div class="center" id="scatter_plot_gdp_title">
         <h3 class="chart_title margin_top_200">Relations of Population, GDP, CO2 Emission</h3>
       </div>
       <div class="mdl-grid">
@@ -106,13 +116,13 @@
           2 charts right below show the top countries by population
           and GDP respectively.
         </div>
-        <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-cell mdl-cell--6-col" id="population_chart_title">
           <div class="center">
             <h3 class="chart_title margin_top_200">Population by Country</h3>
             <div id="population_chart"></div>
           </div>
         </div>
-        <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-cell mdl-cell--6-col" id="gdp_bar_chart_title">
           <div class="center">
             <h3 class="chart_title margin_top_200">GDP by Country</h3>
             <div id="gdp_bar_chart"></div>
@@ -132,7 +142,7 @@
       </div>
 
       <div class="center">
-        <h3 class="chart_title margin_top_200">CO2 Emission by Country</h3>
+        <h3 class="chart_title margin_top_200" id="radial_plot_title">CO2 Emission by Country</h3>
         <p>(million tons/tons per capita)</p>
       </div>
       <div class="mdl-grid">
@@ -164,7 +174,7 @@
 
        
       <div class="center">
-        <h3 class="chart_title">Relation of GDP per Capita, Service Industry, Health</h3>
+        <h3 class="chart_title" id="bubble_chart_title">Relation of GDP per Capita, Service Industry, Health</h3>
       </div>
       <div class="mdl-grid">
         <div class="comment">
@@ -193,12 +203,15 @@
     <div class="mdl-mini-footer__left-section">
       <div class="mdl-logo">
         This website was created by Shuta Gunraku,
-        using the csv data downloaded from the following link.
+        using the csv data downloaded from the following link.<br>
+        No copyright for the data source exists as decsribed in the data source license section.
       </div>
-      <ul class="mdl-mini-footer__link-list">
+      <ul class="mdl-mini-footer__link-list" id="data_source">
         <li><a href="https://www.kaggle.com/datasets/sudalairajkumar/undata-country-profiles?resource=download">
           Data Source</a></li>
       </ul>
+      <div class="mdl-logo">
+      </div>
     </div>
   </footer>  
   
