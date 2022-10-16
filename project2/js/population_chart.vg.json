@@ -10,12 +10,24 @@
       "y": {
         "field": "country",
         "type": "nominal",
-        "sort": "-x"
+        "sort": "-x",
+        "axis": {
+          "title": "Country",
+          "titleFontSize": 15,
+          "labelFont": "Verdana",
+          "labelFontSize": 11
+        }
       },
       "x": {
         "field": "Population in thousands (2017)",
         "type": "quantitative",
-        "title": "population"
+        "title": "population",
+        "axis": {
+          "title": "Population",
+          "titleFontSize": 15,
+          "labelFont": "Verdana",
+          "labelFontSize": 11
+        }
       },
       "color": {
         "field": "Region",
